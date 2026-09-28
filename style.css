@@ -1,0 +1,673 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   CONFIGURAÇÕES GERAIS
+========================= */
+
+body {
+    background-color: #0b0b0f;
+    color: #f5f5f5;
+
+    font-family: "Roboto", sans-serif;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    width: 100%;
+
+    padding: 25px 8%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 1px solid #292933;
+}
+
+
+.logo {
+    font-family: "Orbitron", sans-serif;
+
+    font-size: 22px;
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    color: #00f5d4;
+}
+
+
+nav {
+    display: flex;
+
+    gap: 25px;
+}
+
+
+nav a {
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: 500;
+
+    transition: 0.3s;
+}
+
+
+nav a:hover {
+    color: #00f5d4;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 650px;
+
+    padding: 100px 8%;
+
+    display: flex;
+    align-items: center;
+
+    background-color: #111118;
+}
+
+
+.hero-text {
+    max-width: 800px;
+}
+
+
+.data {
+    color: #00f5d4;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 20px;
+}
+
+
+h1 {
+    font-family: "Orbitron", sans-serif;
+
+    font-size: clamp(60px, 10vw, 140px);
+
+    line-height: 0.9;
+
+    letter-spacing: -5px;
+}
+
+
+.descricao {
+    max-width: 500px;
+
+    margin: 35px 0;
+
+    font-size: 18px;
+
+    line-height: 1.6;
+
+    color: #bcbcc5;
+}
+
+
+/* =========================
+   BOTÃO
+========================= */
+
+.botao {
+    display: inline-block;
+
+    width: fit-content;
+
+    padding: 15px 25px;
+
+    background-color: #00f5d4;
+
+    color: #0b0b0f;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    border: 2px solid #00f5d4;
+
+    transition: 0.3s;
+}
+
+
+.botao:hover {
+    background-color: transparent;
+
+    color: #00f5d4;
+}
+
+
+/* =========================
+   DESTAQUES
+========================= */
+
+.destaques {
+    padding: 100px 8%;
+}
+
+
+.pequeno-titulo {
+    color: #00f5d4;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 15px;
+}
+
+
+.destaques h2 {
+    font-family: "Orbitron", sans-serif;
+
+    margin-bottom: 50px;
+}
+
+
+.artistas {
+    display: flex;
+
+    gap: 25px;
+}
+
+
+.artista {
+    flex: 1;
+
+    border-top: 2px solid #00f5d4;
+
+    padding-top: 20px;
+}
+
+
+.artista img {
+    width: 100%;
+
+    height: 320px;
+
+    object-fit: cover;
+
+    display: block;
+
+    margin-bottom: 20px;
+}
+
+
+.artista h3 {
+    font-family: "Orbitron", sans-serif;
+
+    margin-bottom: 10px;
+}
+
+
+.artista p {
+    color: #888894;
+}
+
+
+.link-lineup {
+    display: inline-block;
+
+    margin-top: 40px;
+
+    color: #00f5d4;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+
+.link-lineup:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   LOCAL
+========================= */
+
+.local {
+    padding: 100px 8%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 50px;
+
+    background-color: #15151d;
+}
+
+
+.local h2 {
+    font-family: "Orbitron", sans-serif;
+
+    margin-bottom: 20px;
+}
+
+
+.local p {
+    color: #bcbcc5;
+
+    line-height: 1.8;
+}
+
+
+/* =========================
+   PÁGINAS INTERNAS
+========================= */
+
+.pagina {
+    min-height: 700px;
+
+    padding: 100px 8%;
+}
+
+
+.pagina h1 {
+    margin-bottom: 70px;
+}
+
+
+/* =========================
+   LINE-UP
+========================= */
+
+.lineup {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+
+.show {
+    display: flex;
+
+    align-items: center;
+
+    gap: 30px;
+
+    padding: 20px;
+
+    border-top: 1px solid #33333d;
+}
+
+
+.show img {
+    width: 180px;
+
+    height: 130px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+.show h2 {
+    font-family: "Orbitron", sans-serif;
+
+    margin-bottom: 12px;
+}
+
+
+.show p {
+    color: #9999a5;
+
+    margin: 5px 0;
+}
+
+
+/* =========================
+   INGRESSOS
+========================= */
+
+.ingressos {
+    display: flex;
+
+    gap: 25px;
+}
+
+
+.ingresso {
+    flex: 1;
+
+    padding: 35px;
+
+    border: 1px solid #363640;
+}
+
+
+.ingresso .tipo {
+    color: #00f5d4;
+
+    font-family: "Orbitron", sans-serif;
+
+    margin-bottom: 20px;
+}
+
+
+.ingresso h2 {
+    color: #00f5d4;
+
+    font-family: "Orbitron", sans-serif;
+}
+
+
+.preco {
+    font-family: "Orbitron", sans-serif;
+
+    font-size: 40px;
+
+    margin: 25px 0;
+}
+
+
+.ingresso ul {
+    padding-left: 20px;
+
+    color: #aaaab5;
+
+    line-height: 2;
+}
+
+
+.ingresso .botao {
+    margin-top: 25px;
+}
+
+
+.destaque-ingresso {
+    border: 2px solid #00f5d4;
+}
+
+
+/* =========================
+   INFORMAÇÕES
+========================= */
+
+.informacoes {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 50px;
+}
+
+
+.informacoes section {
+    border-top: 1px solid #33333d;
+
+    padding-top: 25px;
+}
+
+
+.informacoes h2 {
+    color: #00f5d4;
+
+    font-family: "Orbitron", sans-serif;
+
+    margin-bottom: 20px;
+}
+
+
+.informacoes p {
+    color: #bcbcc5;
+
+    line-height: 1.8;
+}
+
+
+.informacoes ul {
+    padding-left: 25px;
+
+    color: #bcbcc5;
+
+    line-height: 2;
+}
+
+
+.mapa {
+    width: 100%;
+
+    overflow: hidden;
+
+    border: 1px solid #363640;
+}
+
+
+/* =========================
+   FAQ
+========================= */
+
+.faq {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 30px;
+}
+
+
+.pergunta {
+    border-bottom: 1px solid #33333d;
+
+    padding-bottom: 25px;
+}
+
+
+.pergunta h2 {
+    font-family: "Orbitron", sans-serif;
+
+    font-size: 20px;
+
+    margin-bottom: 15px;
+}
+
+
+.pergunta p {
+    color: #aaaab5;
+
+    line-height: 1.6;
+}
+
+
+/* =========================
+   FORMULÁRIO
+========================= */
+
+.contato {
+    margin-top: 80px;
+
+    padding-top: 50px;
+
+    border-top: 1px solid #33333d;
+}
+
+
+.contato h2 {
+    color: #00f5d4;
+
+    font-family: "Orbitron", sans-serif;
+
+    margin-bottom: 30px;
+}
+
+
+form {
+    max-width: 600px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+
+label {
+    margin-top: 15px;
+}
+
+
+input,
+textarea {
+    width: 100%;
+
+    padding: 15px;
+
+    background-color: #15151d;
+
+    border: 1px solid #363640;
+
+    color: white;
+
+    font-family: "Roboto", sans-serif;
+}
+
+
+textarea {
+    resize: vertical;
+}
+
+
+button {
+    margin-top: 20px;
+
+    padding: 15px;
+
+    background-color: #00f5d4;
+
+    color: #0b0b0f;
+
+    border: 2px solid #00f5d4;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+button:hover {
+    background-color: transparent;
+
+    color: #00f5d4;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    padding: 35px 8%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    border-top: 1px solid #292933;
+
+    color: #777783;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 700px) {
+
+    header {
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+
+    nav {
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 15px;
+    }
+
+
+    .hero {
+        min-height: 550px;
+
+        padding: 70px 8%;
+    }
+
+
+    .artistas {
+        flex-direction: column;
+    }
+
+
+    .artista img {
+        height: 350px;
+    }
+
+
+    .ingressos {
+        flex-direction: column;
+    }
+
+
+    .local {
+        flex-direction: column;
+    }
+
+
+    .show {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+
+    .show img {
+        width: 100%;
+
+        height: 250px;
+    }
+
+
+    footer {
+        flex-direction: column;
+
+        gap: 10px;
+    }
+
+}
